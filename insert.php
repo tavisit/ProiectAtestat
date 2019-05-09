@@ -59,6 +59,7 @@ if(isset($_POST['insert']))
             <input type="submit" name="insert" value="Adauga date in baza de date">
 
         </form>
+        <br><br>
         <a href="home.html"><button >Intoarcere</button></a>
     </body>
 

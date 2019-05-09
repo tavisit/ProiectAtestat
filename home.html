@@ -13,15 +13,24 @@
     </head>
 
     <body>
+        <h1 style="text-align:center;">Proiect PHP</h1>
+        <h2>Creare si stergere de DB si Table</h2>
+        
         <p>Ca sa creezi baza de date si tabela, apasa <a href="createDB.php">aici</a></p>
+        <p>Ca sa stergi baza de date, apasa <a href="deleteDB.php">aici</a></p>
+        <br><br>
+
+        <h2>Queries de tipul "Select"</h2>
         <p>Ca sa vezi baza de date, apasa <a href="query.php">aici</a></p>
         <form action="queryName.php" method="post">
-            Numele elevului pt a vedea detalii:&nbsp;<input type="text" name="Nume" required><br><br>
+            Numele elevului pt a vedea detalii: <input type="text" name="Nume" required>
             <input type="submit" name="delete" value="Cauta Persoana">
         </form>
+        <br><br>
+        <h2>Inserare si stergere de date</h2>
         <p>Ca sa inserezi date in baza de date, apasa <a href="insert.php">aici</a></p>
         <p>Ca sa stergi date din baza de date, apasa <a href="delete.php">aici</a></p>
-        <p>Ca sa stergi baza de date, apasa <a href="deleteDB.php">aici</a></p>
+        
     </body>
 
 </html>
