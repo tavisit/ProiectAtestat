@@ -18,7 +18,7 @@ $result = mysqli_query($connect, $query);
 // Afiseaza datele:
 while($row = mysqli_fetch_array($result))
   {
-    echo "|$row[0] | $row[1] | $row[2] | $row[3]|<br>";
+    echo "|$row[0] | $row[1] | $row[2] | $row[3]| $row[4]|<br>";
 
   }
   
@@ -26,8 +26,5 @@ while($row = mysqli_fetch_array($result))
 
 // Inchide Conexiunea
   mysqli_close($connect);
-  sleep(5);
-  echo "Intoarcere pe pagina principala in 5s";
-    $url = "home.html";
-    header( "Location: $url" );
+  echo '</br></br><input type="button" value = \'Intoarcere la pagina principala\'onclick="window.location=\'home.html\'"/>';
 ?>

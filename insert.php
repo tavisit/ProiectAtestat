@@ -28,11 +28,6 @@ if(isset($_POST['insert']))
     else{
         echo 'Eroare';
     }
-    sleep(5);
-    echo "Intoarcere pe pagina principala in 5s";
-    $url = "home.html";
-    header( "Location: $url" );
-    mysqli_close($connect);
     
 }
 ?>
@@ -64,7 +59,7 @@ if(isset($_POST['insert']))
             <input type="submit" name="insert" value="Adauga date in baza de date">
 
         </form>
-
+        <a href="home.html"><button >Intoarcere</button></a>
     </body>
 
 </html>

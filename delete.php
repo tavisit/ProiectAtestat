@@ -35,10 +35,6 @@ if(isset($_POST['delete']))
     }else{
         echo 'Eroare';
     }
-    sleep(5);
-        echo "Intoarcere pe pagina principala in 5s";
-        $url = "home.html";
-        header( "Location: $url" );
 }
 
 mysqli_close($connect);
@@ -67,7 +63,7 @@ mysqli_close($connect);
             <input type="submit" name="delete" value="Sterge Persoana">
 
         </form>
-
+        <a href="home.html"><button >Intoarcere</button></a>
     </body>
 
 </html>
